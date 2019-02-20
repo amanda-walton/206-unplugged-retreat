@@ -92,7 +92,6 @@ textarea {
 
 
 
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -102,49 +101,46 @@ textarea {
     margin: 50px 0;
 }
 
- /* -------------------- Base Header - Footer Styles -------------------- */
+/* -------------------- Base Header - Footer Styles -------------------- */
+
 header,
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
-
- /* Header Styles */
 
 header {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
-header 
-.content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
+header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
-    width: 100%;
-    height: 1px;
-    margin: 10px 0 20px 0;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
  /* Footer Styles */
@@ -187,7 +183,6 @@ header nav ul {
   footer .copyright {
     margin: 20px 0;
   }
-
 
  /* ------------------ Mobile Styles - Homepage ------------------------*/
 
@@ -351,7 +346,6 @@ h3 {
 }
 
 
-
  /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -448,32 +442,29 @@ h3 {
         margin: 100px 0;
     }
 
-    /* Header */
-     
+     /* Header */
     header {
-        justify-content: space-between;
-        
+        justify-content: space-around;
     }
 
     header .content-wrapper {
+        width: 100%;
         justify-content: space-between;
         flex-flow: nowrap;
-        width: 85%;
     }
 
     header nav {
         width: 35%;
     }
-/*
+
     header nav ul {
         justify-content: space-between;
     }
-*/
-  /* 
+
     .header-divider {
         display: none;
-    } 
-*/
+    }
+
     /* Hero Area */
 
     /* Aside */
@@ -535,7 +526,6 @@ h3 {
         width: 60%;
     }
 
-
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -579,8 +569,65 @@ h3 {
 
 }
 
-@media only screen and (min-width-1200px) {
+@media only screen and (min-width:1200px) {
     /* Desktop styles */
+
+    .content-wrapper {
+        max-width: 960px;
+   }
+
+    /* Hero */
+   .hero-area h1 {
+       width: 70%;
+   }
+
+   /* Aside */
+   aside .content-wrapper {
+       justify-content: space-around;
+   }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+       width: 30%;
+   }
+
+   /* Features */
+   .features h2 {
+       width: 90%;
+   }
+
+   .features article {
+       flex-basis: 30%; 
+   }
+
+   /* Reviews */ 
+   .reviews article div {
+       width: 40%;
+   }
+
+/* ==========================================================================
+  About Page
+  ========================================================================== */
+   .mission h2,
+   .contact-section .content-wrapper h2 {
+       width: 100%;
+   }
+
+   .contact-section .content-wrapper h2 {
+       margin-bottom: 100px; 
+   }
+
+/* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+   .faq h2 {
+       width: 100%;
+   }
+
+   .faq-content {
+       flex-basis: 50%;
+   }
+
 }
  
 /* ==========================================================================
@@ -658,5 +705,3 @@ h3 {
         page-break-after: avoid;
     }
 }
-
-
