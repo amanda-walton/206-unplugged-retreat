@@ -104,6 +104,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
 }
  
 ul {
@@ -118,16 +119,18 @@ a {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: 500;
 }
  
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: 500;
 }
  
 p {
-	font-size: .875em;
+    font-size: .875em;
 }
  
 img {
@@ -140,6 +143,10 @@ figure {
  
 address {
     font-style: normal;
+}
+
+address p {
+    line-height: 1.5px;
 }
  
 .content-wrapper {
@@ -155,6 +162,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 header {
@@ -173,6 +181,7 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  background: #3a3a3a; 
 }
 
 header nav {
@@ -182,63 +191,72 @@ header nav {
   flex-flow: row wrap;
   width: 60%;
   margin: 0;
+  font-size: 1.125em;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
- /* Footer Styles */
+/* Footer Styles */
 
- footer {
-    flex-direction: column;
-  }
+footer {
+  flex-direction: column;
+  text-align: center;
+}
   
-  footer p {
+/*footer p {
     margin: 0;
-  }
+} */
   
-  footer .content-wrapper {
+footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
-  }
+}
   
-  footer .contact {
+footer .contact {
     margin-bottom: 50px;
-  }
+}
   
-  footer .social-icons {
+footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
   
-  footer .social-icons p {
+footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .footer .social {
+.footer .social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  footer .copyright {
+footer .copyright {
     margin: 20px 0;
-  }
+}
 
- /* ------------------ Mobile Styles - Homepage ------------------------*/
+/* ------------------ Mobile Styles - Homepage ------------------------*/
 
 /* Hero area */
 
- .hero-area {
+.hero-area {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+}
+
+.hero-area h1 {
+    font-size: 2.25em;
 }
 
 /* Aside */
@@ -248,14 +266,36 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
-.form-description {
-
+aside p {
+    width: 90%;
 }
 
-.form {
-
+aside .form {
+    margin-top: 30px;
+}
+   
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+}
+   
+input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /* Features */
@@ -271,7 +311,7 @@ aside {
 }
 
 .features article {
-    width: 60%;
+    width: 55%;
     margin: 30px 0;
 }
 
@@ -285,6 +325,7 @@ aside {
 
 .features p {
     margin: 0;
+    text-align: center;
 }
 
 .fontawesome-icon {
@@ -302,11 +343,16 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
+    color: #e2e3ed;
 }
 
-.reviews
-h3 {
-    width: 50%;
+.reviews h2 {
+    line-height: 1;
+}
+
+.reviews h3 {
+    width: 55%;
 }
 
 /* ------------------------- Mobile Styles - About Page ---------------------*/
@@ -316,6 +362,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .mission.content-wrapper {
@@ -335,11 +382,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
-
-.contact-section
-.content.wrapper {
-
+    background-color: #2a423a;
 }
 
 .contact-general {
@@ -357,6 +400,7 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .faq .content-wrapper {
